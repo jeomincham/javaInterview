@@ -15,7 +15,7 @@ public class PhoneNumberAscPrint {
     @Test
     public void test(){
         int [] count = new int[10];
-        String mobile = "15625668899";
+        String mobile = "15625667899";
         for (int i = 0; i < mobile.length(); i++) {
             char c = mobile.charAt(i);
             count[c-'0']++;   //c-'0'  -->'1'==49   -  ‘0’==48  将字符转为整数
