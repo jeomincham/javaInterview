@@ -107,4 +107,31 @@ public class StringReverse {
 
     }
 
+
+    @Test
+    public void test2(){
+        String str = "Let's take LeetCode contest";
+        // 输出        s'teL ekat edoCteeL tsetnoc
+
+        String[] strings = str.split(" ");
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (String string : strings) {
+            for (int i = string.length()-1; i >=0; i--) {
+                stringBuilder.append(string.charAt(i));
+            }
+            stringBuilder.append(" ");
+
+        }
+        String substring = stringBuilder.substring(0, stringBuilder.length() - 1);
+
+        System.out.println("substring = " + substring);
+    }
+
+
+
+
+
+
+
 }
