@@ -7,7 +7,7 @@ package Interview.designModels.singleton;
  */
 public class Singleton6 {
     //2.当前类的实例属性
-    private static Singleton6 instance = null; //静态的实例属性，
+    private static  volatile Singleton6 instance = null; //静态的实例属性， 防止指令重排
 
 
     //1,私有化构造器，对象不能通过外界的构造方法实现
