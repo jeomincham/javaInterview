@@ -63,4 +63,23 @@ public class SingletonTest {
     public void test4() throws Exception {
 
     }
+
+    @Test
+    /**
+     *  登记式测试--加强版饿汉式
+     */
+    public void test5() throws Exception {
+        Singleton2 instance1 = Singleton2.getInstance();
+        Singleton2 instance2 = Singleton2.getInstance();
+        System.out.println(instance1 == instance2);  //true
+
+//        try {
+//            Class.forName("Interview.designModels.singleton.Singleton2"); //加载类
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+    }
+
+
+
 }
