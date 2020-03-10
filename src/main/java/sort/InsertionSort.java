@@ -2,6 +2,10 @@ package sort;
 
 import utils.PrintArrayUtil;
 
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * @Author chendm
  * @Date 2020/3/1 21:32
@@ -12,8 +16,10 @@ public class InsertionSort {
     public static void main(String[] args) {
 
         int[] array = {6, 5, 9, 1, 2, 4};
+        System.out.println(Arrays.toString(array));
+
         insertionSort(array);
-        PrintArrayUtil.print(array);
+
     }
 
 
