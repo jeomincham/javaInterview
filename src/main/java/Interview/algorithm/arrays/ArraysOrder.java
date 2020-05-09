@@ -2,6 +2,7 @@ package Interview.algorithm.arrays;
 
 import org.junit.Test;
 
+import java.awt.*;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.TreeSet;
@@ -44,7 +45,6 @@ public class ArraysOrder {
      */
     public void test1_1() {
         int[] nums = {1, 3, 4, 6, 4, 8, 5, 3, 2, 4, 0, 7, 8, 4};
-
       //冒泡排序。升序
         for (int i = 0; i < nums.length; i++) {
             for (int j = i+1; j <nums.length ; j++) {
